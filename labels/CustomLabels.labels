@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Not_Project_Member</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Not Project Member</shortDescription>
+        <value>You are not allowed to add this entry, because you are not a project member.</value>
+    </labels>
+    <labels>
+        <fullName>Timesheet_is_locked</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Timesheet is locked</shortDescription>
+        <value>The timesheet has been locked, you are not allowed to do it</value>
+    </labels>
+    <labels>
+        <fullName>Timesheet_not_found</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Timesheet not found</shortDescription>
+        <value>There is not available timesheet in this period.</value>
+    </labels>
+</CustomLabels>

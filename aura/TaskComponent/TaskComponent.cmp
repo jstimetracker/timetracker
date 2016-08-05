@@ -1,0 +1,14 @@
+<aura:component controller="TimeTrackerComponentController">
+    <aura:handler name="init" action="{!c.myAction}" value="{!this}"/>	  
+	<aura:handler event="c:startTimer" action="{!c.handleStartTimer}"/> 
+	<aura:handler event="c:stopTimer" action="{!c.handleStopTimer}"/>      
+	<aura:attribute name="task" type="Task__c"/>
+	<aura:attribute name="isTimerOn" type="Boolean"/>    
+	<li><h2>{!v.task.Name}</h2> 
+        <aura:renderIf isTrue="{!v.isTimerOn==false}">
+            <ui:button label="Start" press="{!c.handleStartTimer}"/> 
+        <aura:set attribute="else">
+			<ui:button label="Stop" press="{!c.handleStopTimer}"/> 
+        </aura:set></aura:renderIf>
+	</li>    
+</aura:component>

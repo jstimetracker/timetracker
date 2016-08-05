@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="Start Timer">  
+    <aura:attribute name="task" type="Task__c"/>
+</aura:event>

@@ -1,0 +1,17 @@
+<aura:component controller="TimeTrackerComponentController">
+    <aura:handler name="init" action="{!c.myAction}" value="{!this}"/>	
+  
+    <aura:attribute name="projects" type="Project__c[]"/>
+    <aura:attribute name="selectedTask" type="Task__c"/>    
+    <ul>
+        <aura:iteration items="{!v.projects}" var="project">
+            <li class="minli"><h3>{!project.Name}</h3>
+                <ul>
+                    <aura:iteration items="{!project.jstimetracker__Tasks__r}" var="task">
+                        <c:TaskComponent task="{!task}"/>
+                    </aura:iteration>
+                </ul>
+            </li>
+        </aura:iteration>
+    </ul>
+</aura:component>
